@@ -18,6 +18,14 @@ defineProps({
   </div>
 </template>
 
+<form@submit.prevent="createItem">
+  <label for="title">Título:</label>
+  <input type="text" v-model="newItem.title" required>
+</form>
+  <!-- Adicione mais campos conforme necessário -->
+
+
+
 <style scoped>
 h1 {
   font-weight: 500;
